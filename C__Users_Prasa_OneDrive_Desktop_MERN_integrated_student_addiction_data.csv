@@ -1,0 +1,40 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     fp_growth_ready_data-weka.filters.unsupervised.attribute.NumericToBinary-Rfirst-last-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    705
+Attributes:   111
+              [list of attributes omitted]
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.95 (670 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 1
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 13
+
+Size of set of large itemsets L(2): 49
+
+Size of set of large itemsets L(3): 53
+
+Size of set of large itemsets L(4): 16
+
+Best rules found:
+
+ 1. Most_Used_Platform_YouTube_binarized=0 695 ==> Parental_Control_Medium_binarized=0 695    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 2. Most_Used_Platform_KakaoTalk_binarized=0 693 ==> Parental_Control_Medium_binarized=0 693    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 3. Most_Used_Platform_LINE_binarized=0 693 ==> Parental_Control_Medium_binarized=0 693    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 4. Most_Used_Platform_VKontakte_binarized=0 693 ==> Parental_Control_Medium_binarized=0 693    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 5. Addicted_Score_teen_Low_binarized=0 692 ==> Parental_Control_Medium_binarized=0 692    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 6. Most_Used_Platform_Snapchat_binarized=0 692 ==> Parental_Control_Medium_binarized=0 692    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 7. Most_Used_Platform_WeChat_binarized=0 690 ==> Parental_Control_Medium_binarized=0 690    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 8. Addicted_Score_social_Low_binarized=0 688 ==> Parental_Control_Medium_binarized=0 688    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+ 9. Addicted_Score_social_Low_binarized=0 688 ==> Most_Used_Platform_LINE_binarized=0 688    <conf:(1)> lift:(1.02) lev:(0.02) [11] conv:(11.71)
+10. Most_Used_Platform_LINE_binarized=0 Addicted_Score_social_Low_binarized=0 688 ==> Parental_Control_Medium_binarized=0 688    <conf:(1)> lift:(1) lev:(0) [0] conv:(0)
+

@@ -1,0 +1,22 @@
+=== Run information ===
+
+Scheme:       weka.associations.FPGrowth -P 2 -I -1 -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1
+Relation:     fp_growth_ready_data-weka.filters.unsupervised.attribute.NumericToBinary-Rfirst-last-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    705
+Attributes:   111
+              [list of attributes omitted]
+=== Associator model (full training set) ===
+
+FPGrowth found 12 rules (displaying top 10)
+
+ 1. [Mental_Health_Score_Low_binarized=1]: 421 ==> [Affects_Academic_Performance_social_Yes_binarized=1]: 421   <conf:(1)> lift:(1.56) lev:(0.21) conv:(150.49) 
+ 2. [Addicted_Score_social_High_binarized=1]: 408 ==> [Affects_Academic_Performance_social_Yes_binarized=1]: 408   <conf:(1)> lift:(1.56) lev:(0.21) conv:(145.84) 
+ 3. [Addicted_Score_social_High_binarized=1]: 408 ==> [Mental_Health_Score_Low_binarized=1]: 408   <conf:(1)> lift:(1.67) lev:(0.23) conv:(164.36) 
+ 4. [Addicted_Score_social_High_binarized=1]: 408 ==> [Affects_Academic_Performance_social_Yes_binarized=1, Mental_Health_Score_Low_binarized=1]: 408   <conf:(1)> lift:(1.67) lev:(0.23) conv:(164.36) 
+ 5. [Affects_Academic_Performance_social_Yes_binarized=1, Addicted_Score_social_High_binarized=1]: 408 ==> [Mental_Health_Score_Low_binarized=1]: 408   <conf:(1)> lift:(1.67) lev:(0.23) conv:(164.36) 
+ 6. [Mental_Health_Score_Low_binarized=1, Addicted_Score_social_High_binarized=1]: 408 ==> [Affects_Academic_Performance_social_Yes_binarized=1]: 408   <conf:(1)> lift:(1.56) lev:(0.21) conv:(145.84) 
+ 7. [Mental_Health_Score_Low_binarized=1]: 421 ==> [Addicted_Score_social_High_binarized=1]: 408   <conf:(0.97)> lift:(1.67) lev:(0.23) conv:(12.67) 
+ 8. [Mental_Health_Score_Low_binarized=1]: 421 ==> [Affects_Academic_Performance_social_Yes_binarized=1, Addicted_Score_social_High_binarized=1]: 408   <conf:(0.97)> lift:(1.67) lev:(0.23) conv:(12.67) 
+ 9. [Affects_Academic_Performance_social_Yes_binarized=1, Mental_Health_Score_Low_binarized=1]: 421 ==> [Addicted_Score_social_High_binarized=1]: 408   <conf:(0.97)> lift:(1.67) lev:(0.23) conv:(12.67) 
+10. [Affects_Academic_Performance_social_Yes_binarized=1]: 453 ==> [Mental_Health_Score_Low_binarized=1]: 421   <conf:(0.93)> lift:(1.56) lev:(0.21) conv:(5.53) 
+
